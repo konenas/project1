@@ -1,0 +1,19 @@
+# MAKE NEW BRANCH
+git branch [name]			# make a branch
+git chekout [name]			# goto branch
+[change whatever you want]
+git add -A				# add all to git
+git commit -m"message"			# commit changes
+
+# SEND CHANGES TO REMOTE
+git push -u [remote] [name]		# send branch
+git checkout master			# return to master
+git pull [remote] master		# get ALL changes
+git merge [name]			# merge branch locally
+git push [remote] master		# send it to master
+
+# REMOVE BRANCH
+git branch -d [name]
+git branch -a				# list branches
+git push [remote] --delete [name]	# remote branch
+
