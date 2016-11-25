@@ -17,3 +17,5 @@ git branch -d [name]
 git branch -a				# list branches
 git push [remote] --delete [name]	# remote branch
 
+# REMOTE BRANCH
+git pull konenas.project1 master	# get all
