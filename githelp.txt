@@ -18,4 +18,12 @@ git branch -a				# list branches
 git push [remote] --delete [name]	# remote branch
 
 # REMOTE BRANCH
+git remote add konenas.project1 git@github.com:konenas/project1.git
+git remote add kix2.project1 ssh://git@kix2:6222/opt/git/project1
 git pull konenas.project1 master	# get all
+
+# BACKUP ALL
+git bundle create /tmp/fbackup --all			# keep a full backup
+git bundle create /tmp/ibackup --since=n.days.ago --all	# incremental backup
+git clone /tmp/backup another_folder	# clone to another folder
+
