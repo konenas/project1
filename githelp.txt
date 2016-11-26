@@ -25,5 +25,10 @@ git pull konenas.project1 master	# get all
 # BACKUP ALL
 git bundle create /tmp/fbackup --all			# keep a full backup
 git bundle create /tmp/ibackup --since=n.days.ago --all	# incremental backup
-git clone /tmp/backup another_folder	# clone to another folder
+# RESTORE
+git clone /tmp/backup another_folder			# clone to another folder
+git clone /tmp/backup -b master another_folder		# clone master to another folder
+
+# MAKE SSH KEY
+ssh-keygen -t rsa -b 4096 -C "kix@0rganize1nfo.eu"	# and send it to git
 
